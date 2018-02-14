@@ -1,38 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:100,300,400,700");
-/* line 82, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 56, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 html, body {
   background: #32363D; }
 
 /* width */
-/* line 88, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 62, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 ::-webkit-scrollbar {
   width: 10px; }
 
 /* Track */
-/* line 94, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 68, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 ::-webkit-scrollbar-track {
   background: #494f59;
   border-radius: 0; }
 
 /* Handle */
-/* line 100, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 74, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 ::-webkit-scrollbar-thumb {
-  background: #606875;
-  border-radius: 0; }
+  background: #949ba7;
+  border-radius: 5px; }
 
 /* Handle on hover */
-/* line 107, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 81, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 ::-webkit-scrollbar-thumb:hover {
-  background: #788190; }
+  background: #cccfd5; }
 
-/* line 111, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 85, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 .wrapper {
   display: flex;
   margin: 0;
   padding: 0;
   position: relative; }
 
-/* line 119, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 93, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 .sidebar {
   width: 280px;
   background: #50E3C2;
@@ -42,17 +42,17 @@ html, body {
   position: sticky;
   top: 0;
   left: 0; }
-  /* line 129, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 103, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   .sidebar .sidebar-overlay {
     background: #3d424b;
     height: 100vh; }
-  /* line 134, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 108, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   .sidebar .logo-section {
     height: 70px;
     background: #1b1d21;
     text-align: center;
     padding: 16px; }
-    /* line 140, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 114, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .sidebar .logo-section .btn {
       background: none;
       letter-spacing: .2em;
@@ -60,16 +60,16 @@ html, body {
       color: #b3b3b3;
       font-size: 18px;
       font-family: 'Lato', sans-serif; }
-  /* line 151, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 125, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   .sidebar .user-section {
     padding: 20px;
     text-align: center; }
-    /* line 155, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 129, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .sidebar .user-section img {
       margin: 0 auto;
       width: 80%;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    /* line 161, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 135, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .sidebar .user-section .user-name {
       font-weight: lighter;
       letter-spacing: 1.5px;
@@ -77,13 +77,13 @@ html, body {
       color: white;
       font-size: 1.3rem;
       font-family: 'Open Sans', sans-serif; }
-    /* line 171, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 145, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .sidebar .user-section .user-title {
       font-size: .8rem;
       font-weight: lighter;
       color: white;
       letter-spacing: 1.5px; }
-    /* line 178, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 152, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .sidebar .user-section .btn-group .btn {
       background-color: #32363d;
       color: #b3b3b3;
@@ -92,18 +92,18 @@ html, body {
       width: 40px;
       margin: 1px;
       border: none; }
-      /* line 187, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 161, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .sidebar .user-section .btn-group .btn i {
         font-size: 18px; }
-    /* line 191, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 165, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .sidebar .user-section .btn-group .btn:hover {
       background-color: #2b2f35; }
-  /* line 197, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 171, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   .sidebar .sidebar-nav ul {
     margin: 0;
     padding: 0;
     border-top: 0.5px solid white; }
-    /* line 202, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 176, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .sidebar .sidebar-nav ul li {
       margin: 0;
       padding: 10px;
@@ -112,28 +112,28 @@ html, body {
       position: relative;
       height: 53px;
       border-bottom: 0.5px solid white; }
-      /* line 211, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 185, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .sidebar .sidebar-nav ul li a {
         text-decoration: none;
         color: #b3b3b3;
         color: white; }
-      /* line 216, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 190, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .sidebar .sidebar-nav ul li a:hover {
         color: #cccccc; }
-      /* line 220, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 194, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .sidebar .sidebar-nav ul li h3 {
         font-size: 14px;
         margin: 0;
         text-transform: uppercase;
         font-weight: 300;
         letter-spacing: 1.3px; }
-      /* line 229, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 203, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .sidebar .sidebar-nav ul li h4 {
         font-size: 11px;
         margin: 0;
         letter-spacing: 1.3px;
         font-weight: 300; }
-      /* line 237, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 211, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .sidebar .sidebar-nav ul li i {
         position: absolute;
         top: 0;
@@ -141,23 +141,23 @@ html, body {
         background-color: #494f59;
         display: block;
         padding: 14px; }
-      /* line 246, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 220, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .sidebar .sidebar-nav ul li i:hover {
         background: #50E3C2; }
-    /* line 251, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 225, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .sidebar .sidebar-nav ul li:hover {
       cursor: pointer; }
-      /* line 255, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 229, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .sidebar .sidebar-nav ul li:hover i {
         background: #50E3C2;
         color: rgba(0, 0, 0, 0.6); }
 
-/* line 264, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 238, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 .content {
   z-index: 50;
   width: 100%;
   position: relative; }
-  /* line 271, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 245, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   .content .header {
     line-height: 70px;
     background: #494f59;
@@ -168,22 +168,22 @@ html, body {
     width: 100%;
     top: 0;
     z-index: 50; }
-    /* line 283, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 257, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .header .logo {
       background: #1b1d21;
       display: inline-block;
       vertical-align: bottom; }
-      /* line 288, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 262, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .header .logo img {
         border: 0.5px solid white;
         padding: 10px 20px; }
-    /* line 294, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 268, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .header a,
     .content .header .material-icons,
     .content .header a:hover {
       color: white;
       position: relative; }
-      /* line 300, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 274, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .header a .blinker,
       .content .header .material-icons .blinker,
       .content .header a:hover .blinker {
@@ -200,45 +200,82 @@ html, body {
 @keyframes blinking {
   50% {
     opacity: 0; } }
-    /* line 317, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 291, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .header a {
       cursor: pointer; }
-  /* line 324, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 298, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   .content .content-section {
     position: static;
     color: #cccccc;
     padding: 20px; }
-    /* line 329, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 303, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .content-section .breadcrumb {
       padding: 0;
       background: none;
       text-transform: uppercase;
-      font-size: 12px; }
-      /* line 335, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      font-size: 12px;
+      letter-spacing: 1.01px; }
+      /* line 310, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .content-section .breadcrumb a, .content .content-section .breadcrumb a:hover {
         color: white; }
-    /* line 340, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 315, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .content-section .breadcrumb-item + .breadcrumb-item::before {
       font-family: "Material Icons";
       content: "\e5cc"; }
-    /* line 345, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 320, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .content-section .page-title {
       text-transform: uppercase;
-      font-weight: 300; }
-    /* line 351, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      font-weight: 300;
+      font-size: 32px;
+      letter-spacing: 1.3px; }
+    /* line 328, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .content-section .production > .card-body {
       height: calc(100vh - 300px);
       overflow-y: scroll; }
-    /* line 357, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 334, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .content-section .card {
       background: #3d424b;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-      /* line 363, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      border-radius: 0; }
+      /* line 340, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .content-section .card .job-details label, .content .content-section .card .job-details input {
         font-size: 12px;
         color: #b3b3b3;
         font-weight: 300; }
-      /* line 370, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 347, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      .content .content-section .card .list-group-item {
+        background: transparent;
+        position: relative;
+        border: none;
+        border-bottom: 0.5px solid white; }
+        /* line 354, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+        .content .content-section .card .list-group-item span:nth-child(1) {
+          display: block;
+          font-size: 12px;
+          color: white; }
+        /* line 360, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+        .content .content-section .card .list-group-item span:nth-child(2) {
+          display: block;
+          font-size: 11px;
+          color: white;
+          font-weight: lighter;
+          font-style: italic; }
+        /* line 368, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+        .content .content-section .card .list-group-item span:nth-child(3) {
+          position: absolute;
+          right: 25px;
+          top: 25%;
+          font-weight: lighter;
+          font-size: 20px; }
+        /* line 376, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+        .content .content-section .card .list-group-item i {
+          position: absolute;
+          right: 5px;
+          top: 33%;
+          font-weight: lighter;
+          font-size: 20px;
+          color: white; }
+      /* line 387, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .content-section .card .card-header {
         text-transform: uppercase;
         color: #50E3C2;
@@ -246,20 +283,23 @@ html, body {
         border: none;
         border-radius: 0;
         letter-spacing: 1.3px; }
-      /* line 380, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+        /* line 395, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+        .content .content-section .card .card-header .btn {
+          border-radius: 0; }
+      /* line 401, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .content-section .card .card {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-        /* line 382, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+        /* line 403, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
         .content .content-section .card .card .card-header {
           color: #F5A623;
           font-size: 14px; }
-        /* line 389, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+        /* line 410, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
         .content .content-section .card .card .card-body .job-details .row {
           margin-bottom: 0; }
-    /* line 399, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 420, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .content-section .card-minigraph {
       position: relative; }
-      /* line 402, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 423, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .content-section .card-minigraph .tag {
         position: absolute;
         top: 15px;
@@ -267,38 +307,38 @@ html, body {
         display: block;
         padding: 5px 10px;
         text-align: right; }
-      /* line 412, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 433, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .content-section .card-minigraph .tag-success {
         background: #7ED321; }
-      /* line 416, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 437, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .content-section .card-minigraph .tag-danger {
         background: #FF586C; }
-      /* line 421, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      /* line 442, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
       .content .content-section .card-minigraph h4 {
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 300;
         padding: 20px 10px 10px 10px; }
-  /* line 433, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 454, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   .content .job-status-icons {
     text-align: center; }
-    /* line 437, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 458, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .job-status-icons div > a {
       font-size: 30px; }
-    /* line 441, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 462, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .job-status-icons div:first-child {
       color: #FF586C; }
-    /* line 444, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 465, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .job-status-icons div:nth-child(2) {
       color: #17a2b8; }
-    /* line 447, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 468, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .job-status-icons div:nth-child(3) {
       color: #F5A623; }
-    /* line 450, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    /* line 471, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .job-status-icons div:nth-child(4) {
       color: #7ED321; }
 
-/* line 456, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 477, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 .card-header-btn {
   height: 30px;
   width: 30px;
@@ -308,7 +348,7 @@ html, body {
   color: #F5A623;
   border: 1px solid #F5A623; }
 
-/* line 468, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 489, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 .list-group-items {
   background: transparent; }
 

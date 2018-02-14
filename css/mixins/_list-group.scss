@@ -3,7 +3,7 @@
 @mixin list-group-item-variant($state, $background, $color) {
   .list-group-item-#{$state} {
     color: $color;
-    background-color: $background;
+    background-color: transparent;
 
     &.list-group-item-action {
       @include hover-focus {
