@@ -104,28 +104,7 @@
 
         </div>
         <div class="content">
-            <!--
-            <div class="header container-fluid">
-            <div class="row align-items-center">
-                
-                <div class="col">
-                    <a class="material-icons">&#xE5D2;</a>
-                </div>
-                <div class="col-8 text-right">
-                    <a class="material-icons">&#xE8B6;</a>
-                    <a class="material-icons">&#xE7F4;
-                        <span class="blinker"></span>
-                    </a>
-                </div>
-            
-                <div class="col text-right pr-0">
-                    <a href="#/" class="logo pr-3 pl-3"><img src="img/pipesoft.png"></a>
-                </div>
-            </div>
-            </div>
--->
 
-            <!-- Image and text -->
             <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark navbar-dashboard">
 
 
@@ -157,7 +136,7 @@
                     </ol>
                 </nav>
                 <div class="row mb-3">
-                    <div class="col col-sm-3 mb-3">
+                    <div class="col col-sm-6 mb-3">
                         <div class="card d-flex align-self-stretch production">
                             <div class="card-header row ml-0 mr-0 ">
                                 <div class="col-6 pl-0">Production</div>
@@ -334,10 +313,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-sm-9">
+                    <div class="col col-sm-6">
                         <div class="card d-flex align-self-stretch mb-3">
                             <div class="card-header row ml-0 mr-0 ">
-                                <div class="col-6 pl-0">Stats For
+                                <div class="col-6 pl-0">Job Detail
                                     <a href="" class="btn btn-sm btn-warning card-header-btn material-icons">&#xE227;</a>
                                     <a href="" class="btn btn-sm btn-warning fa fa-barcode card-header-btn"></a>
                                     <a href="" class="btn btn-sm btn-warning card-header-btn">P</a>
@@ -351,153 +330,84 @@
 
                             </div>
                             <div class="card-body">
-                                <canvas id="myChart" width="100%" height="30%"></canvas>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-sm-4 mb-3">
-                                <div class="card card-minigraph">
-                                    <h4>Total Orders</h4>
-                                    <span class="tag tag-success"> <i class="material-icons">&#xE8E5;</i>15%</span>
-                                    <canvas id="totalOrdersChart"></canvas>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 mb-3">
-                                <div class="card card-minigraph">
-                                    <h4>Refunds</h4>
-                                    <span class="tag tag-danger"><i class="material-icons">&#xE8E3;</i>-9%</span>
-                                    <canvas id="refundsChart"></canvas>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 mb-3">
-                                <div class="card card-minigraph">
-                                    <h4>Profit</h4>
-                                    <span class="tag tag-success"><i class="material-icons">&#xE8E5;</i>23%</span>
-                                    <canvas id="profitChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="row">
+                                    <div class="col-6 job-detail-status">
+                                        <div class="media">
+                                            <div class="mr-3"><a class="icon ion-eye"></a></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">02/09/2018 10:35 AM</p>
+                                                <p class="mt-0"><span>Queued</span> for inspection</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3"><a class="icon ion-waterdrop"></a></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">02/08/2018 5:35 PM</p>
+                                                <p class="mt-0"><span>Completed</span> Threading</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3"><a class="icon ion-waterdrop"></a></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">02/08/2018 9:26 AM</p>
+                                                <p class="mt-0"><span>Completed</span> Hyrdro</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3"><a class="icon ion-flame"></a></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">02/07/2018 3:01 PM</p>
+                                                <p class="mt-0"><span>Completed</span> Heat Treat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 job-detail-customer">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Stanley Steamers
+                                            </div>
+                                            <div class="card-body">
+                                                <address class="mb-3">
+                                                  1208 E Kennedy Blvd <br>
+                                                  Suite 222 <br>
+                                                  Tampa, FL 33602
+                                                  </address>
+                                                <div class="">
+                                                    <div class="form-group row mb-0">
+                                                        <label for="staticEmail" class="col-sm-4 col-form-label">Phone:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" readonly class="form-control-plaintext" id="" value="813-555-1234">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row mt-0">
+                                                        <label for="staticEmail" class="col-sm-4 col-form-label">Fax:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" readonly class="form-control-plaintext" id="" value="813-555-2345">
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                        <div class="row mb-3">
-                            <div class="col-6 mb-3">
-                                <div class="card">
-                                    <div class="card-header">Inventory</div>
-                                    <div class="card-body">
-                                        <div class="list-group">
-                                            <a href="" class="list-group-item">
-                                              <span>1" OD X 0.065" WALL ALLOY STEEL TUBE</span>
-                                              <span>Part# 7373</span>
-                                              <span class="text-success">120</span>
-                                              <i class="material-icons">&#xE5CC;</i>
-                                          </a>
-                                            <a href="" class="list-group-item">
-                                              <span>DOM MILD STEEL TUBE A513 TYPE 5</span>
-                                              <span>Part# 7667</span>
-                                              <span class="text-success">1456</span>
-                                              <i class="material-icons">&#xE5CC;</i>
-                                          </a>
-                                            <a href="" class="list-group-item">
-                                              <span>C122 H80 ROUND TUBE, STRAIGHT - METRIC</span>
-                                              <span>Part# 8532</span>
-                                              <span class="text-danger">0</span>
-                                              <i class="material-icons">&#xE5CC;</i>
-                                          </a>
-                                            <a href="" class="list-group-item">
-                                              <span>C122 ROUND TUBE</span>
-                                              <span>Part# 9100</span>
-                                              <span class="text-success">13</span>
-                                              <i class="material-icons">&#xE5CC;</i>
-                                          </a>
-                                            <a href="" class="list-group-item">
-                                              <span>4130 - ALLOY ROUND BAR</span>
-                                              <span>Part# 1247</span>
-                                              <span class="text-success">88</span>
-                                              <i class="material-icons">&#xE5CC;</i>
-                                          </a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card">
-                                    <div class="card-header">Bulletin Board</div>
-                                    <div class="card-body">
-                                        <div id="accordion" class="accordion">
-                                            <div class="">
-                                                <div class="accordion-card-heading" id="headingOne">
-                                                    <p class="mb-0">
-                                                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                 <i class="fa fa-envelope text-danger"></i>
-                                                  <span class="from">Cathy Blair</span> 
-                                                  <span class="subject">Need reports from last Friday</span>
-                                                  <span class="timestamp">02/05/2018 11:37 AM</span>
-                                                </a>
-                                                    </p>
-                                                </div>
-
-                                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                                    <div class="card-body">
-                                                        Hey Joe, <br> I need the reports from Friday by the end of day today. Can you send them to me as soon as you can? Thanks!
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="">
-                                                <div class="accordion-card-heading" id="headingTwo">
-                                                    <h5 class="mb-0">
-                                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                  <i class="fa fa-envelope-open text-success"></i>
-                                                  <span>Don Percy</span> 
-                                                  <span>Need reports from last Friday</span>
-                                                  <span>02/05/2018 11:37 AM</span>
-                                                </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                    <div class="">
-                                                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="">
-                                                <div class="accordion-card-heading" id="headingThree">
-                                                    <h5 class="mb-0">
-                                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                  <i class="fa fa-envelope-open text-success"></i>
-                                                  <span>Carla Hughes</span> 
-                                                  <span>Your PTO request has been approved</span>
-                                                  <span>02/05/2018 11:37 AM</span>
-                                                </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                    <div class="">
-                                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="">
-                                                <div class="accordion-card-heading" id="headingThree">
-                                                    <h5 class="mb-0">
-                                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                  <i class="fa fa-envelope text-danger"></i>
-                                                  <span>Carla Hughes</span> 
-                                                  <span>Quarterly Newsletter</span>
-                                                  <span>02/05/2018 11:37 AM</span>
-                                                </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                    <div class="">
-                                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                                    </div>
-                                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <div class="media">
+                                            <div class="mr-3"><a class="icon ion-waterdrop"></a></div>
+                                            <div class="media-body">
+                                                <p class="mb-0">02/08/2018 9:26 AM</p>
+                                                <p class="mt-0"><span>Completed</span> Hyrdro</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
                 </div>
@@ -665,5 +575,21 @@
             }
         });
     </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5a86ffb24b401e45400cfd1b/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>

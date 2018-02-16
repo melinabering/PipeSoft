@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+ 
+    <link rel="stylesheet" href="css/styles2.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <title>PipeSoft 2 - Republic Tube - Heat Treat</title>
+  </head>
+  <body>
+   
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-overlay">
+               <div class="media-query">
+                   <p></p>
+               </div>
+                <div class="user-section" id="user-section">
+                    <img v-bind:src="userimg" class="img-responsive rounded-circle" alt="">
+                    <div class="user-name">{{username}}</div>
+                    <div class="user-title">{{usertitle}}</div>
+                    
+                    <div class="btn-group mt-3" role="group" aria-label="Basic example">    
+                      <button type="button" class="btn btn-secondary">
+                          <i class="material-icons">&#xE8B8;</i>
+                      </button>
+                      <button type="button" class="btn btn-secondary">
+                          <i class="material-icons">&#xE0BE;</i>
+                      </button>
+                      <a type="button" class="btn btn-secondary" v-bind:href="url">
+                          <i class="material-icons">&#xE8AC;</i>
+                      </a>
+                    </div>
+                </div>
+                <div class="sidebar-nav">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <h3>Dashboard</h3>
+                                <h4>Activity &amp; News</h4>
+                                <i class="material-icons">&#xE871;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Reports</h3>
+                                <h4>Custom Reporting</h4>
+                                <i class="material-icons">&#xE6E1;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Production</h3>
+                                <h4>Queue &amp; Stats</h4>
+                                <i class="material-icons">&#xE065;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Shipping &amp; Receiving</h3>
+                                <h4>Track Shipments</h4>
+                                <i class="material-icons">&#xE558;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Sales</h3>
+                                <h4>Sales &amp; Prospects</h4>
+                                <i class="material-icons">&#xE227;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Users</h3>
+                                <h4>Manage Users</h4>
+                                <i class="material-icons">&#xE7FB;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Help</h3>
+                                <h4>Find Answers</h4>
+                                <i class="material-icons">&#xE887;</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="content container-fluid pl-0">
+            <div class="header">
+            <div class="row align-items-center">
+                
+                <div class="col">
+                    <a class="material-icons ml-3">&#xE5D2;</a>
+                </div>
+                <div class="col-8 text-right">
+                    <a class="material-icons">&#xE8B6;</a>
+                    <a class="material-icons">&#xE7F4;
+                        <span class="blinker"></span>
+                    </a>
+                </div>
+            
+                <div class="col text-right pr-0">
+                    <a href="#/" class="logo pr-3 pl-3"><img src="img/pipesoft.png" alt="PipeSoft"></a>
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid content-section">
+               
+               <h1 class="page-title">Heat Treat Form</h1>
+               <nav aria-label="breadcrumb mb-5">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Heat Treat</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Heat Treat Form</a></li>
+                  </ol>
+                </nav>
+                 <div class="row mb-3">
+                   <div class="col col-lg-4 mb-3">
+                       <div class="card d-flex align-self-stretch heat-treat-form">
+                          <div class="card-header row ml-0 mr-0 ">
+                            <div class="col-6 pl-0">Heat Treat Form</div>
+                           
+                            
+                          </div>
+                          <div class="card-body">
+                                 <form>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Shift</label>
+                                    <div class="col-sm-9">
+                                      <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Work Order #</label>
+                                    <div class="col-sm-9">
+                                      <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Start Time</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">End Time</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">1st Time Prime</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Reworks</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Rejects</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Prime Re Temper</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Prime Re Q&amp;T</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Heat No</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Lot No</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" v-bind:value="lotNo">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Scheduled Time (min)</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Unscheduled Time (Min)</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">AF Speed</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <div class="col text-right">
+                                          <button class="btn btn-warning">Notes</button>
+                                      <button class="btn btn-success">Add</button>
+                                      </div>
+                                  </div>
+                                </form>
+                          </div>
+                        </div>
+                   </div>
+                    <div class="col col-lg-8">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Inventory</div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                      <thead class="thead-dark">
+                                        <tr>
+                                          <th scope="col">Shift</th>
+                                          <th scope="col">WO#</th>
+                                          <th scope="col">Start</th>
+                                          <th scope="col">End</th>
+                                          <th scope="col">1st Time Prime</th>
+                                          <th scope="col">Reworks</th>
+                                          <th scope="col">Rejects</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td>@fat</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+               
+                  </div>
+              
+            
+            
+            
+        
+            
+            
+            
+            </div><!-- .container -->
+        </div>
+        
+        
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        // custom gradient
+        var gradientFill = ctx.createLinearGradient(0, 400, 0, 100);
+        gradientFill.addColorStop(0, "rgba(80, 227, 194, .2)");
+        gradientFill.addColorStop(1, "rgba(80, 227, 194, .8)");        
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    label: '2018 REVENUE IN THOUSANDS (USD)',
+                    data: [50, 45, 68, 82, 48, 76, 77, 67, 84, 37, 107, 83],
+                    backgroundColor: gradientFill,
+                    borderColor: [
+                        'transparent'
+                    ]
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        
+        var ctx2 = document.getElementById("totalOrdersChart").getContext('2d');
+         
+        var totalOrdersChart = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                
+                    data: [50, 45, 68, 82, 48, 76, 77, 67, 84, 37, 107, 83],
+                    backgroundColor: 'transparent',
+                    borderColor: [
+                        '#7ED321'
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scaleLabel:{
+                    display:false,  
+                },
+                scales: {
+                    gridLines:{
+                        display:false,  
+                    },
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            
+                        }
+                    }]
+                }
+            }
+        });
+        
+        var ctx3 = document.getElementById("refundsChart").getContext('2d');
+         
+        var refundsChart = new Chart(ctx3, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                
+                    data: [50, 45, 68, 82, 48, 76, 77, 67, 84, 37, 107, 83],
+                    backgroundColor: 'transparent',
+                    borderColor: [
+                        '#FF586C'
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scaleLabel:{
+                    display:false,  
+                },
+                scales: {
+                    gridLines:{
+                        display:false,  
+                    },
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            
+                        }
+                    }]
+                }
+            }
+        });
+        
+        var ctx4 = document.getElementById("profitChart").getContext('2d');
+         
+        var profitChart = new Chart(ctx4, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                
+                    data: [50, 45, 68, 82, 48, 76, 77, 67, 84, 37, 107, 83],
+                    backgroundColor: 'transparent',
+                    borderColor: [
+                        '#7ED321'
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scaleLabel:{
+                    display:false,  
+                },
+                scales: {
+                    gridLines:{
+                        display:false,  
+                    },
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            
+                        }
+                    }]
+                }
+            }
+        });
+        
+        
+        
+</script>
+ 
+  <script>
+        new Vue({
+            el: '#user-section',
+            data:{
+                userimg:'img/joe.jpg',
+                username: 'Joseph Svoboda Jr',
+                usertitle: 'CEO',
+                url: '/login.html',
+                dashboardURL: '/index.html',
+                lotNo: 'Mike'
+            }
+        });
+    </script>
+  </body>
+</html>
