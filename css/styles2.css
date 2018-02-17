@@ -451,8 +451,31 @@ body {
     /* line 648, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
     .content .job-status-icons div:nth-child(4) {
       color: #7ED321; }
+  /* line 654, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  .content .chat-notes h5 {
+    text-transform: uppercase;
+    font-size: 13px; }
+  /* line 660, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  .content .chat-notes .media {
+    margin-bottom: 10px; }
+    /* line 662, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    .content .chat-notes .media img {
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    /* line 668, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+    .content .chat-notes .media .media-body {
+      background: #494f59;
+      font-size: 13px;
+      padding: 10px 10px 0px 10px; }
+      /* line 673, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      .content .chat-notes .media .media-body p:first-child {
+        font-weight: bold; }
+      /* line 676, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+      .content .chat-notes .media .media-body p:nth-child(2) {
+        font-style: italic; }
 
-/* line 654, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 684, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 .card-header-btn {
   height: 30px;
   width: 30px;
@@ -462,17 +485,17 @@ body {
   color: #F5A623;
   border: 1px solid #F5A623; }
 
-/* line 666, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 696, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 .list-group-items {
   background: transparent; }
 
-/* line 670, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 700, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 label {
   text-transform: uppercase;
   font-size: 12px !important;
   letter-spacing: 1.2px; }
 
-/* line 679, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+/* line 709, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
 .heat-treat-form select,
 .heat-treat-form input[type="text"] {
   background: transparent;
@@ -481,28 +504,28 @@ label {
   padding: 8px; }
 
 @media (min-width: 576px) {
-  /* line 697, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 727, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   html .media-query p::after,
   body .media-query p::after {
     content: "SM"; } }
 
 @media (min-width: 768px) {
-  /* line 710, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 740, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   html .media-query p::after,
   body .media-query p::after {
     content: "MD"; } }
 
 @media (min-width: 992px) {
-  /* line 724, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 754, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   html .media-query p::after,
   body .media-query p::after {
     content: "LG"; }
-  /* line 730, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 760, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   .sidebar {
     left: -200px; } }
 
 @media (min-width: 1450px) {
-  /* line 741, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
+  /* line 771, /Users/melinabering/Google Drive/Clients/PoweredLabs/PipeSoft/css/styles2.scss */
   html .media-query p::after,
   body .media-query p::after {
     content: "XL"; } }

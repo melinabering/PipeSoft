@@ -649,6 +649,36 @@ body {
             color: $success;
         }
     }
+
+    .chat-notes {
+        h5 {
+            text-transform: uppercase;
+            font-size: 13px;
+
+        }
+
+        .media {
+            margin-bottom: 10px;
+            img {
+                height: 50px;
+                border-radius: 50%;
+                box-shadow: $shadow-2;
+            }
+
+            .media-body {
+
+                background: lighten($theme-primary, 10%);
+                font-size: 13px;
+                padding: 10px 10px 0px 10px;
+                p:first-child {
+                    font-weight: bold;
+                }
+                p:nth-child(2) {
+                    font-style: italic;
+                }
+            }
+        }
+    }
 }
 
 .card-header-btn {
