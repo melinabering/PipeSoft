@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles2.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <title>PipeSoft 2 - Republic Tube</title>
+</head>
+
+<body>
+
+    <div class="container-fluid wrapper">
+        <div class="sidebar">
+            <div class="sidebar-overlay">
+                <div class="media-query">
+                    <p></p>
+                </div>
+                <div class="user-section" id="user-section">
+                    <img v-bind:src="userimg" class="img-responsive rounded-circle" alt="">
+                    <div class="user-name">{{username}}</div>
+                    <div class="user-title">{{usertitle}}</div>
+
+                    <div class="btn-group mt-3" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary">
+                          <i class="material-icons">&#xE8B8;</i>
+                      </button>
+                        <button type="button" class="btn btn-secondary">
+                          <i class="material-icons">&#xE0BE;</i>
+                      </button>
+                        <a type="button" class="btn btn-secondary" v-bind:href="url">
+                          <i class="material-icons">&#xE8AC;</i>
+                      </a>
+                    </div>
+                </div>
+                <div class="sidebar-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <h3>Dashboard</h3>
+                                <h4>Activity &amp; News</h4>
+                                <i class="material-icons">&#xE871;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Reports</h3>
+                                <h4>Custom Reporting</h4>
+                                <i class="material-icons">&#xE6E1;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Production</h3>
+                                <h4>Queue &amp; Stats</h4>
+                                <i class="material-icons">&#xE065;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Shipping &amp; Receiving</h3>
+                                <h4>Track Shipments</h4>
+                                <i class="material-icons">&#xE558;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Sales</h3>
+                                <h4>Sales &amp; Prospects</h4>
+                                <i class="material-icons">&#xE227;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Users</h3>
+                                <h4>Manage Users</h4>
+                                <i class="material-icons">&#xE7FB;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ui-kit.html">
+                                <h3>Help</h3>
+                                <h4>Find Answers</h4>
+                                <i class="material-icons">&#xE887;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ui-kit.html">
+                                <h3>UI Kit</h3>
+                                <h4>Remove later...or whatever.</h4>
+                                <i class="material-icons">&#xE8F1;</i>
+                            </a>
+
+                            <ul>
+                                <li><a href="">Typography</a></li>
+                                <li><a href="">Style Guide</a></li>
+                                <li><a href="">Components</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+
+
+            <!-- Image and text -->
+            <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark navbar-dashboard">
+
+
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto ml-3 mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><a class="material-icons icon-hamburger">&#xE5D2;</a> <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="material-icons">&#xE7F4;
+                    <span class="blinker"></span>
+                </a>
+                <a class="navbar-brand logo mr-0 ml-3" href="#">
+                    <img src="img/pipesoft.png" alt="PipeSoft">
+                </a>
+            </nav>
+
+            <div class="container-fluid content-section">
+
+                <h1 class="page-title">UI Kit</h1>
+                <nav aria-label="breadcrumb mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">UI Kit</a></li>
+                    </ol>
+                </nav>
+
+                <div class="card">
+                    <div class="card-header">Typography</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="row">
+                                    <!-- headings -->
+                                    <div class="col-md-3 col-sm-6">
+
+                                        <div class="card">
+                                            <div class="card-header">Headings</div>
+                                            <div class="card-body">
+                                                <h1>H1 Heading</h1>
+                                                <h2>H2 Heading</h2>
+                                                <h3>H3 Heading</h3>
+                                                <h4>H4 Heading</h4>
+                                                <h5>H5 Heading</h5>
+                                                <h6>H6 Heading</h6>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- paragraphs -->
+                                    <div class="col-md-5 col-sm-6">
+
+                                        <div class="card">
+                                            <div class="card-header">Paragraphs</div>
+                                            <div class="card-body">
+                                                <p>
+                                                    paragraph
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- lists -->
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-header">Lists</div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>Far far away, behind the word mountains</li>
+                                                    <li>Hen she reached the first hills</li>
+                                                    <li>Vestibulum nisi nibh, pulvinar sit amet lacinia</li>
+                                                    <li>Mauris pretium elit ac facilisis mollis posuere</li>
+                                                    <li>Mauris vitae magna in dolor porta aliquam</li>
+                                                </ul>
+                                                <ol>
+                                                    <li>Far far away, behind the word mountains</li>
+                                                    <li>Morbi quis neque non nisl egestas laoreet</li>
+                                                    <li>Vestibulum nisi nibh, pulvinar sit amet</li>
+                                                    <li>Mauris pretium elit ac facilisis mollis</li>
+                                                    <li>Mauris vitae magna in dolor porta aliquam</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="mt-3"></div>
+
+                                <div class="row">
+                                    <!-- text colors -->
+                                    <div class="col-sm-5">
+                                        <div class="card">
+                                            <div class="card-header">Text Colors</div>
+                                            <div class="card-body">
+                                                <p><strong>Default</strong>. Aliquam molestie quam in tincidunt accumsan</p>
+                                                <p class="text-primary"><strong>Primary</strong>. Morbi quis neque non nisl egestas laoreet</p>
+                                                <p class="text-success"><strong>Success</strong>. Vestibulum nisi nibh, pulvinar sit amet lacinia</p>
+                                                <p class="text-info"><strong>Info</strong>. Mauris pretium elit ac facilisis mollis posuere</p>
+                                                <p class="text-warning"><strong>Warning</strong>. Mauris vitae magna in dolor porta aliquam</p>
+                                                <p class="text-danger"><strong>Danger</strong>. Mauris vitae magna in dolor porta aliquam</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- text backgrounds -->
+                                    <div class="col-sm-7">
+                                        <div class="card">
+                                            <div class="card-header">Text Backgrounds</div>
+                                            <div class="card-body">
+                                                <p class="line-height-36"><span class="bg-default">Hello</span> nisl vitae ligula volutpat, sit amet rhoncus nisl posuere. Vestibulum vel nisi euismod, <span class="bg-primary">Mountains</span> fringilla ex. Fusce vel mattis quam, id bibendum leo. Vivamus sollicitudin ligula ut ante bibendum, et <span class="bg-success">Cool.</span> Interdum et malesuada <span class="bg-info">Kit</span> ipsum primis in faucibus. Praesent laoreet ultrices tortor <span class="bg-warning">Chill</span> Vestibulum quis egestas mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, <span class="bg-danger">No</span> himenaeos.</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+                                <!-- blockquotes -->
+                                <div class="row mt-3">
+                                    <div class="col-sm-6">
+                                        <div class="card">
+                                            <div class="card-header">Blockquotes</div>
+                                            <div class="card-body">
+                                                <blockquote>
+                                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                                                    <cite>- Michaeal Sam</cite>
+                                                </blockquote>
+                                                /div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <h4 class="sub-title">&nbsp;</h4>
+                                        <blockquote class="blockquote-reverse">
+                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                                            <cite>- John Doe</cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <!-- End blockquotes -->
+
+                                <div class="mb-60"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- .container -->
+        </div>
+
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        // custom gradient
+        var gradientFill = ctx.createLinearGradient(0, 400, 0, 100);
+        gradientFill.addColorStop(0, "rgba(80, 227, 194, .2)");
+        gradientFill.addColorStop(1, "rgba(80, 227, 194, .8)");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    label: '2018 REVENUE IN THOUSANDS (USD)',
+                    data: [50, 45, 68, 82, 48, 76, 77, 67, 84, 37, 107, 83],
+                    backgroundColor: gradientFill,
+                    borderColor: [
+                        'transparent'
+                    ]
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx2 = document.getElementById("totalOrdersChart").getContext('2d');
+
+        var totalOrdersChart = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+
+                    data: [50, 45, 68, 82, 48, 76, 77, 67, 84, 37, 107, 83],
+                    backgroundColor: 'transparent',
+                    borderColor: [
+                        '#7ED321'
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scaleLabel: {
+                    display: false,
+                },
+                scales: {
+                    gridLines: {
+                        display: false,
+                    },
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx3 = document.getElementById("refundsChart").getContext('2d');
+
+        var refundsChart = new Chart(ctx3, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+
+                    data: [50, 45, 68, 82, 48, 76, 77, 67, 84, 37, 107, 83],
+                    backgroundColor: 'transparent',
+                    borderColor: [
+                        '#FF586C'
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scaleLabel: {
+                    display: false,
+                },
+                scales: {
+                    gridLines: {
+                        display: false,
+                    },
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx4 = document.getElementById("profitChart").getContext('2d');
+
+        var profitChart = new Chart(ctx4, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+
+                    data: [50, 45, 68, 82, 48, 76, 77, 67, 84, 37, 107, 83],
+                    backgroundColor: 'transparent',
+                    borderColor: [
+                        '#7ED321'
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scaleLabel: {
+                    display: false,
+                },
+                scales: {
+                    gridLines: {
+                        display: false,
+                    },
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <script>
+        var vm = new Vue({
+            el: '#user-section',
+            data: {
+                userimg: 'img/joe.jpg',
+                username: 'Joseph Svoboda',
+                usertitle: 'CEO',
+                url: '/login.html'
+            }
+        });
+    </script>
+</body>
+</html>

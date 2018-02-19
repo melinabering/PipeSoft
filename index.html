@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+    <!-- custom styling -->
     <link rel="stylesheet" href="css/styles2.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
@@ -27,30 +31,30 @@
     <div class="container-fluid wrapper">
         <div class="sidebar">
             <div class="sidebar-overlay">
-                <div class="media-query">
-                    <p></p>
-                </div>
+
                 <div class="user-section" id="user-section">
                     <img v-bind:src="userimg" class="img-responsive rounded-circle" alt="">
                     <div class="user-name">{{username}}</div>
                     <div class="user-title">{{usertitle}}</div>
 
-                    <div class="btn-group mt-3" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">
+                    <!--
+<div class="btn-group-vertical mt-3" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary">
                           <i class="material-icons">&#xE8B8;</i>
                       </button>
-                        <button type="button" class="btn btn-secondary">
+    <button type="button" class="btn btn-secondary">
                           <i class="material-icons">&#xE0BE;</i>
                       </button>
-                        <a type="button" class="btn btn-secondary" v-bind:href="url">
+    <a type="button" class="btn btn-secondary" v-bind:href="url">
                           <i class="material-icons">&#xE8AC;</i>
                       </a>
-                    </div>
+</div>
+-->
                 </div>
                 <div class="sidebar-nav">
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="index.html">
                                 <h3>Dashboard</h3>
                                 <h4>Activity &amp; News</h4>
                                 <i class="material-icons">&#xE871;</i>
@@ -92,10 +96,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="ui-kit.html">
                                 <h3>Help</h3>
                                 <h4>Find Answers</h4>
                                 <i class="material-icons">&#xE887;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ui-kit.html">
+                                <h3>UI Kit</h3>
+                                <h4>Remove later...or whatever.</h4>
+                                <i class="material-icons">&#xE8F1;</i>
                             </a>
                         </li>
                     </ul>
@@ -133,7 +144,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto ml-3 mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"><a class="material-icons icon-hamburger">&#xE5D2;</a> <span class="sr-only">(current)</span></a>
+                            <a class="material-icons icon-hamburger nav-link" id="collapseSidebar">&#xE5D2;</a>
                         </li>
                     </ul>
                 </div>
@@ -156,8 +167,13 @@
                         <li class="breadcrumb-item active" aria-current="page"><a href="#">Data</a></li>
                     </ol>
                 </nav>
+
+                <div class="media-query">
+                    <p></p>
+                </div>
+
                 <div class="row mb-3">
-                    <div class="col col-sm-3 mb-3">
+                    <div class="col col-lg-5 col-xl-3 mb-3 animated fadeIn">
                         <div class="card d-flex align-self-stretch production">
                             <div class="card-header row ml-0 mr-0 ">
                                 <div class="col-6 pl-0">Production</div>
@@ -188,9 +204,9 @@
                                             </div>
                                         </div>
                                         <div class="row job-status-icons">
-                                            <div class="col"><a class="icon ion-flame"></a></div>
+                                            <div class="col"><a class="icon ion-flame text-muted"></a></div>
                                             <div class="col"><a class="icon ion-waterdrop"></a></div>
-                                            <div class="col"><a class="icon-thread"></a></div>
+                                            <div class="col"><a class="icon-thread text-muted"></a></div>
                                             <div class="col"><a class="icon ion-eye"></a></div>
                                         </div>
                                     </div>
@@ -334,7 +350,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-sm-9">
+                    <div class="col col-lg-7 col-xl-9 animated fadeIn">
                         <div class="card d-flex align-self-stretch mb-3">
                             <div class="card-header row ml-0 mr-0 ">
                                 <div class="col-6 pl-0">Stats For
@@ -356,21 +372,21 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-4 mb-3">
+                            <div class="col-sm-4 col col-lg-4 mb-3">
                                 <div class="card card-minigraph">
                                     <h4>Total Orders</h4>
                                     <span class="tag tag-success"> <i class="material-icons">&#xE8E5;</i>15%</span>
                                     <canvas id="totalOrdersChart"></canvas>
                                 </div>
                             </div>
-                            <div class="col-sm-4 mb-3">
+                            <div class="col-sm-4 col col-lg-4 mb-3">
                                 <div class="card card-minigraph">
                                     <h4>Refunds</h4>
                                     <span class="tag tag-danger"><i class="material-icons">&#xE8E3;</i>-9%</span>
                                     <canvas id="refundsChart"></canvas>
                                 </div>
                             </div>
-                            <div class="col-sm-4 mb-3">
+                            <div class="col-sm-4 col col-lg-4 mb-3">
                                 <div class="card card-minigraph">
                                     <h4>Profit</h4>
                                     <span class="tag tag-success"><i class="material-icons">&#xE8E5;</i>23%</span>
@@ -380,7 +396,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <div class="col-6 mb-3">
+                            <div class="col-md-6 col-sm-12 mb-3">
                                 <div class="card">
                                     <div class="card-header">Inventory</div>
                                     <div class="card-body">
@@ -419,7 +435,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="card">
                                     <div class="card-header">Bulletin Board</div>
                                     <div class="card-body">
@@ -442,6 +458,11 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+
+
+
+
                                             <div class="">
                                                 <div class="accordion-card-heading" id="headingTwo">
                                                     <h5 class="mb-0">
@@ -663,6 +684,42 @@
                 usertitle: 'CEO',
                 url: '/login.html'
             }
+        });
+
+
+        var delay = (function() {
+            var timer = 0;
+            return function(callback, ms) {
+                clearTimeout(timer);
+                timer = setTimeout(callback, ms);
+            };
+        })();
+
+        $(function() {
+            var pause = 100;
+            // will only process code within delay(function() { ... }) every 100ms.
+
+            $(window).resize(function() {
+                delay(function() {
+                    var width = $(window).width();
+
+                    $("#collapseSidebar").click(function() {
+                        $(".sidebar").toggle(1000, function() {
+
+                        });
+
+                    });
+                    if (width >= 768 && width <= 959) {
+                        // code for tablet view
+                    } else if (width >= 480 && width <= 767) {
+                        // code for mobile landscape
+                    } else if (width <= 479) {
+                        // code for mobile portrait
+                    }
+                }, pause);
+            });
+
+            $(window).resize();
         });
     </script>
 </body>

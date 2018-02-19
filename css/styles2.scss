@@ -3,8 +3,9 @@
 
 // DELETE THIS LATER
 .media-query {
-    text-align: center;
+    text-align: left;
     color: white;
+    font-size: 48px
 }
 
 $theme-primary:#32363D;
@@ -144,13 +145,14 @@ body {
 }
 
 .sidebar {
-    width: 300px;
+    width: 54px;
     background: $primary;
     box-shadow: $shadow-1;
     height: 100vh;
     z-index: 100;
     position: sticky;
     top: 0; //display: none;
+    display: none;
     .sidebar-overlay {
         background: lighten($theme-primary, 5%);
         height: 100vh;
@@ -174,7 +176,7 @@ body {
     }
 
     .user-section {
-        padding: 20px;
+        padding: 20px 0;
         text-align: center; //        background-color: darken($theme-primary, 3%);
         img {
             margin: 0 auto;
@@ -183,7 +185,7 @@ body {
         }
 
         .user-name {
-
+            display: none;
             font-weight: lighter;
             letter-spacing: 1.5px;
             font-size-adjust: auto;
@@ -197,6 +199,7 @@ body {
             font-weight: lighter;
             color: $primary-text;
             letter-spacing: 1.5px;
+            display: none;
         }
 
         .btn-group .btn {
@@ -247,6 +250,7 @@ body {
                     text-transform: uppercase;
                     font-weight: 300; //                    letter-spacing: 1px;
                     letter-spacing: 1.3px;
+                    display: none;
                 }
 
                 h4 {
@@ -254,6 +258,7 @@ body {
                     margin: 0; //                    letter-spacing: 1px;
                     letter-spacing: 1.3px;
                     font-weight: 300;
+                    display: none;
                 }
 
                 i {
@@ -267,6 +272,24 @@ body {
 
                 i:hover {
                     background: $primary;
+                }
+
+                ul {
+
+                    background: darken($theme-primary, 10%);
+                    margin: 14px -10px;
+                    padding: 0;
+                    li {
+                        height: auto;
+                        margin: 0;
+                        padding: 5px 10px;
+                        border: none;
+
+                        a {
+                            font-size: 11px;
+
+                        }
+                    }
                 }
             }
 
@@ -434,6 +457,8 @@ body {
                 height: calc(100vh - 300px);
                 overflow-y: scroll;
             }
+
+
         }
 
         .card {
@@ -636,6 +661,8 @@ body {
             font-size: 30px;
         }
 
+        .icon-thread {}
+
         div:first-child {
             color: $danger;
         }
@@ -644,6 +671,10 @@ body {
         }
         div:nth-child(3) {
             color: $warning;
+            background: url(../thread.svg) center bottom no-repeat;
+            height: 30px;
+            margin: auto;
+            display: block;
         }
         div:nth-child(4) {
             color: $success;
@@ -731,7 +762,7 @@ label {
     }
 }
 
-// Medium devices (tablets, 768px and up)
+// MD: Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     html,
     body {
@@ -742,9 +773,16 @@ label {
             }
         }
     }
+
+    .sidebar {
+        display: block;
+        width: 54px;
+
+        .user-section {}
+    }
 }
 
-// Large devices (desktops, 992px and up)
+// LG: Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     html,
     body {
@@ -758,11 +796,25 @@ label {
     }
 
     .sidebar {
-        left: -200px;
+        display: block;
+        width: 300px;
+
+        .sidebar-nav {
+            ul {
+                li {
+                    a {
+                        h3,
+                        h4 {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-// Extra large devices (large desktops, 1200px and up)
+// XL: Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1450px) {
     html,
     body {
@@ -770,6 +822,24 @@ label {
         .media-query {
             p::after {
                 content: "XL";
+            }
+        }
+
+        .sidebar {
+            display: block;
+            width: 300px;
+
+            .sidebar-nav {
+                ul {
+                    li {
+                        a {
+                            h3,
+                            h4 {
+                                display: block;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
